@@ -1,0 +1,92 @@
+body {
+    overflow-y: scroll;
+    background-color: #395886;
+}
+
+.scroll_container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.fullscroll {
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/*  */
+.head{
+    padding-top: 200px;
+    font-size: 160px;
+    color: #F0F3FA;
+}
+.note{
+    color: #D5DEEF;
+}
+.label_input{
+    display: flex;
+    width:fit-content;
+    justify-content:center;
+    align-items:baseline;
+    padding-top: 40px;
+}
+#input{
+    border-width: 0px;
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    color: #D5DEEF;
+    border-bottom-width:2px ;
+    border-color: #D5DEEF;
+    border-style: solid;
+}
+
+.objlabel{
+    font-size: 20px;
+    color: #D5DEEF;
+}
+.papadiv{
+    width: fit-content;
+    height: 100px;
+    /* transform: scale(1.5); */
+    margin-bottom: 30px;
+
+
+}
+.start{
+    width: 100%;
+}
+.status_found{
+    /* margin-top: 200px; */
+    display: flex;
+    width: fit-content;
+    gap: 100px;
+    color: #F0F3FA;
+}
+canvas{
+    margin-top: 100px;
+    height: 400px;
+    width: 400px;
+    border: #8AAEE0, 2px , solid ;
+    background-color: #638ECB;
+}
+

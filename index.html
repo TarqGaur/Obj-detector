@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>AI object Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="scroll_container" onscroll="reveal()">
+        <div class="section">
+            <div class="fullscroll">
+                <center>
+                    <h1 class="head">AI Object Finder</h1>
+                    <h2 class="note">The input name which you will give should match the names present in CoCo model
+                        then only it will detect.</h2>
+                </center>
+            </div>
+        </div>
+        <div class="section">
+            <div class="fullscroll">
+                <center>
+                    <div class="papadiv">
+                        <div class="label_input">
+                            <h2 class="objlabel">Object Name: </h2>
+                            <input type="text"  id="input">
+                        </div>
+                        <button class="btn start" onclick="start()">Start </button>
+                    </div>
+                    <div class="status_found">
+                        <h2 id="status">Status:</h2>
+                        <h2 id="obj_detected">Found:</h2>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
